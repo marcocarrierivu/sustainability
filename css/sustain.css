@@ -1,67 +1,67 @@
-/* Marco Carrieri - September 27 */
+/* Marco Carrieri - September 30 */
 
 * {
-  box-sizing: border-box;
+  box-sizing: border-box; /* includes the padding and border in size */
 }
 
 body {
-  font-size: 16px;
+  font-size: 16px; /* base text size */
   line-height: 1.5;
   font-family: Verdana;
-  margin: 0;
+  margin: 0; /* remove default body margin */
 }
 
 header, ul, #content-wrapper {
   width: 90%;
-  max-width: 1200px;
-  margin-left: auto;
+  max-width: 1200px; /* adds a cap to large screens */
+  margin-left: auto; /* center container */
   margin-right: auto;
 }
 
 a {
-  color: #008000;
+  color: #008000; /* green links */
 }
 
 [id=logo] {
-  position: absolute;
+  position: absolute; /* logo in header corner */
   top: 0px;
   left: 0px;
 }
 
 header {
-  position: relative;
+  position: relative /* relative positioning context for logo */
 }
 
 header h1, nav ul {
-  padding-left: 50px;
+  padding-left: 50px; /* space for logo */
 }
 
 nav {
-  background-color: #008000;
+  background-color: #008000; /* green nav bar */
 }
 
 li {
-  list-style-type: none;
-  display: inline-block;
+  list-style-type: none; /* no bullets */
+  display: inline-block; /* horizontal nav items */
 }
 
 ul a {
   display: inline-block;
   padding: 1rem;
-  font: bold;
-  text-decoration: none;
+  font: bold; /* bold text */
+  text-decoration: none; /* remove the underline */
   color: white;
 }
 
 ul a:hover {
-  background-color: black;
+  background-color: black; /* contrast on hovering on elements */
   color: #9ae39a;
 }
 
 main article img {
-  border: 3px double #333;
-  float: left;
-  margin: .5rem 1rem .5rem 0;
+  border: 3px double #333; /* the decorative border */
+  float: left; /* wraps text around image */
+  margin: .5rem 1rem .5rem 0; /* space from text */
 }
 
 main section {
@@ -72,7 +72,7 @@ main section div {
   background-color: #e7ffe7;
   border: 1px solid #008000;
   border-radius: 10px;
-  margin-right: 1rem;
+  margin-right: 1rem; /* gap between cards */
   flex: 1;
   text-align: center;
 }
@@ -82,29 +82,29 @@ main section div {
 }
 
 main section div h2 {
-  background-color: #008000;
-  border-radius: 10px 10px 0px 0px;
+  background-color: #008000; /* card header strip */
+  border-radius: 10px 10px 0px 0px; /* rounded top */
   color: white;
   margin-top: 0;
 }
 
 main section div img {
-  border: 3px double #333;
+  border: 3px double #333; /* matches article image style */
   display: block;
   margin: auto;
 }
 
 aside section {
-  background-color: white;
+  background-color: white; /* sidebar card */
   margin-bottom: 1rem;
   border: 1px solid #008000;
 }
 
 aside h3 {
-  background-color: #008000;
+  background-color: #008000; /* sidebar header */
   color: white;
   padding: .5rem;
-  margin: 0 0 0 0;
+  margin: 0 0 0 0; /* resets margins */
 }
 
 aside a {
@@ -117,8 +117,8 @@ aside a {
 }
 
 aside {
-  order: 2;
-  flex: 1;
+  order: 2; /* placed before main */
+  flex: 1; 
   background-color: #ccc;
   margin-right: 1rem;
   padding: .5rem;
@@ -128,10 +128,10 @@ aside {
 }
 
 aside h2 {
-  margin-top: 0;
-  white-space: nowrap;
+  margin-top: 0; /* tightens heading */
+  white-space: nowrap; /* keep on one line */
 }
 
 #content-wrapper main {
-  order: 3;
+  order: 3; /* main content after the sidebar */
 }
